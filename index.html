@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jobtask</title>
+	<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+}
+#jobtasksection{
+	display: flex;
+	overflow: hidden;
+}
+/* sidebar*/
+#jobtasksection .sidebar{
+	min-height: 100vh;
+	width: 10vw;
+	background-color: white;
+	box-shadow: 5px 5px 10px 5px silver;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	z-index: 100;
+}
+#jobtasksection .box{
+	width: 10vw;
+	height: 14vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+	text-transform: capitalize;
+	
+}
+ img{
+	filter: grayscale(100%);
+	margin-bottom: 9px;
+}
+#lessonplan{
+	color: black;
+}
+.lessonplan{
+	background-color: aliceblue;
+	border-left: royalblue solid 5px;
+}
+.box h5{
+	filter: grayscale(1);
+	letter-spacing: 1px;
+	color: gray;
+}
+.topimage{
+	 display:block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 4px solid black;
+}
+/* end side bar*/
+/* main bar*/
+.blankdiv{
+	height: 14vh;
+	background-color: white;
+}
+
+.arrow{
+	width: 0;
+	height: 0;
+	border-top: 5px solid transparent;
+	border-right: 10px solid #555;
+	border-bottom: 5px solid transparent;
+	margin-top: 15px;
+}
+.maindiv{
+	width: 100vw;
+	height: 86vh;
+	background-color:#F9F9F9;
+	z-index: -1;
+}
+.vedio{
+	display:flex;
+	align-items: center;
+	padding: 40px;
+}
+.vedio h5{
+	margin-left: 10px;
+	font-size: 1rem;
+	color: gray;
+	text-transform: capitalize;
+	filter: grayscale(1);
+}
+.url{
+	width: 60vw;
+	height: 2.5rem;
+	background-color: white;
+	margin-left: 8rem;
+	font-weight: bolder;
+	padding-left: 20px;
+	padding-top: 8px;
+	border-radius: 15px;
+}
+.mainbar h5{
+	text-align: center;
+	font-weight: bolder;
+	font-size: 20px;
+	margin-top: 20px;	
+}
+.upload{
+	margin-left: 8.2rem;
+	height: 10rem;
+	width: 10rem;
+	background-color: white;
+	text-align: center;
+	font-weight: bolder;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/* end of main bar*/
+
+	</style>
+</head>
+<body>
+	<section id="jobtasksection">
+		<div class="sidebar">
+			<div class="box">
+				<div class="topimage"></div>
+			</div>
+			<div class="student box">
+				<img src="https://img.icons8.com/windows/32/000000/person-male.png"/ width="25px" height="25px">
+				<h5>students</h5>
+			</div>
+			<div class="lessonplan box">
+				<img src="https://img.icons8.com/ios/50/000000/book.png"/ width="25px" height="25px">
+				<h5 id="lessonplan">lesson plan</h5>
+			</div>
+			<div class="setting box">
+				<img src="https://img.icons8.com/ios/50/000000/settings--v1.png"/ width="25px" height="25px">
+				<h5>settings</h5>
+			</div>
+		</div>
+		<div class="mainbar">
+			<div class="blankdiv"></div>
+			<div class="maindiv">
+				<div class="vedio">
+					<div class="arrow"></div>
+					<h5>vedios</h5>
+				</div>
+				<div class="url">Insert URL here</div>
+				<h5>or</h5>
+				<div class="upload">upload</div>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
